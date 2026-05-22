@@ -9,8 +9,42 @@ function ingresar(){
         alert("usuario o contraseña incorrecta");
         document.getElementById("mensaje").innerText = "Usuario o clave incorrectos";
     }
-     
 }
+
+
+function calcular(){
+    let total = 0;
+    if(document.getElementById("casco").checked){
+        total += 120;
+    }
+    if(document.getElementById("arnes").checked){
+        total += 210;
+    }
+    if(document.getElementById("emergencia").checked){
+        total += 500;
+    }
+    if(document.getElementById("variometro").checked){
+        total += 350;
+    }
+    if(document.getElementById("radio").checked){
+        total += 180;
+    }
+    if(document.getElementById("navaja").checked){
+        total += 35;
+    }
+    if(document.getElementById("garmin").checked){
+        total += 750;
+    }
+    if(document.getElementById("speedbag").checked){
+        total += 95;
+    }
+    document.getElementById("resultadoRepuesto").innerHTML =
+    "Total final: $ " + total;
+
+}
+
+
+
 
 function mostrarinfo(){
     var tipo = document.getElementById("tipo").value;
@@ -89,3 +123,4 @@ function mostrarinfo(){
 
     document.getElementById("resultado").innerText = info;
      }
+

@@ -12,20 +12,23 @@
     
 
     <div id="cont3">
-        <h4>Dependiendo su nivel en el deporte seleccione el adecuado para usted</h4>
+        
+        <h4>Dependiendo su nivel en el deporte seleccione la vela mas adecuada para usted</h4>
         
         <p>Los parapentes de practica son para alumnos iniciando en el deporte, tienen una superficie mayor, generando más sustentación, despegues a menor velocidad y reacciones muy lentas y nobles ante errores del alumno. </p>
         <p>Los intermedios son para pilotos que ya tienen experiencia en el deporte, tienen una superficie un poco menor al de practica. Esto genera menos sustentación, permite reacciones mas rapidas.</p>
         <p>Los acrobaticos son de velas extremadamente chicas, logrando giros hiper-rápidos y una velocidad de respuesta inmediata. No se recomiendan tallas grandes para pilotos pesados en esta modalidad.</p>
         <p>Los tandem son exclusivamente para soportar el peso de dos adultos, donde suelen ir un principiante y su entrenador. </p>
-    
+        <p>Si ya tiene una vela y desea conocer sobre <a href="paramotor.html" style="font-size: 20px; color: rgb(67, 12, 12);">Paramotores</a>, ingrese aqui. </p>
+
+
        
     </div>
        
     
 
     <div id="cont2">
-        <h2>Elija el tipo de parapente</h2>
+        <h3>Elija el tipo de parapente</h3>
         <select id="tipo">
             <option value="Practica">Practica (alumnos)</option>
             <option value="Intermedio">Intermedio (post-alumnos)</option>
@@ -34,7 +37,7 @@
             
         </select>
 
-        <h2>Tamaño segun peso</h2>
+        <h3>Tamaño segun peso</h3>
         <select id="tamaño">
             <option value="S">S </option>
             <option value="M">M </option>
@@ -42,14 +45,9 @@
             <option value="XL">XL </option>
         </select>
         <br>
-        <br>
         <button onclick="mostrarinfo()">Seleccionar</button>
         <p id="resultado"></p>
-
-
-<br><br>
-         <a href="paramotor.html">Paramotor información</a>
-
+      
        </div>
 
     
@@ -67,8 +65,48 @@
         <button onclick="ingresar()">AFILIAR</button>
     </div>
 
+<br>
+    <div id="contRepuestos">
+
+    <h4>Comprar Repuestos</h4>
+
+    <div id="columnas">
+
+        <div id="col1">
+
+            <label><input type="checkbox" id="casco"> Casco ($120)</label><br>
+
+            <label><input type="checkbox" id="arnes"> Arnés ($210)</label><br>
+
+            <label><input type="checkbox" id="speedbag"> Speedbag ($210)</label><br>
+
+            <label><input type="checkbox" id="emergencia"> Paracaídas ($500)</label>
+
+        </div>
+
+        <div id="col2">
+
+            <label><input type="checkbox" id="variometro"> Variometro ($350)</label><br>
+
+            <label><input type="checkbox" id="radio"> Radio VHF ($180)</label><br>
+
+            <label><input type="checkbox" id="navaja"> Navaja ($35)</label><br>
+
+            <label><input type="checkbox" id="garmin"> Garmin InReach ($750)</label>
+
+        </div>
 
     </div>
+
+    <button onclick="calcular()">
+        Calcular Total
+    </button>
+
+    <div id="resultadoRepuesto"></div>
+
+</div>
+
+<br>
 
 <script src="script.js"></script>
     

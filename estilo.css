@@ -20,22 +20,20 @@ body {
     color: rgb(15, 12, 12);
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    padding-top: 50px;  
+    padding-top: 40px;  
 }
 
 #cont2 {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 20px;    
-    width: 30%;
-    height: 30%;
+    width: 800px;
+    height: 110px;
 
-
-    
     button {
         background-color: rgb(117, 176, 160);
         color: black;
-        padding: 10px 25px;
+        padding: 10px 40px;
         text-align: center;
         display: inline-block;
         font-size: 15px;
@@ -45,26 +43,25 @@ body {
     }
     #resultado {
         color: rgb(23, 20, 20);
-        font-size: 20px;
+        font-size: 10px;
         width: auto;
         height: auto;
         background-size: cover;
         text-align: center;
-        font-weight: 70;
-        font-size: 23px;
+        font-weight: 50;
+        font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
         background-color: #87e4fc;
         border-radius: 15px;
     }
-    
  }
 
  #cont3 {
     position: absolute;
-    bottom: 0px;
+    bottom: 170px;
     left: 20px;    
     width: 800px;
-    height: 260px;
+    height: 300px;
     background-color: rgb(140, 140, 170);
     border-radius: 20px;
 }
@@ -75,19 +72,59 @@ body {
     top: 20px;
     width: 40%;
     height: 50%;
-    
-
      }
 
 #cont4 {
     position: absolute;
+    background-color: rgb(101, 161, 161);
     bottom: 20px;
-    right: 0px;    
-    width: 30%;
-    height: 40%;
-    
-    
+    text-align: left;
+    right: 20px;  
+    width: 500px;
+    height: 40%;    
+    border-radius: 20px;
 }
 
+#contRepuestos{
+    position: absolute;
+    top: 530px;
+    left: 20px;
+    height: 90px;
+    width: 550px;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    padding: 60px;
+}
 
-    
+#contRepuestos h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(15, 12, 12);
+    font-size: 20px;
+    margin: 5px;
+    margin-top: -35px;
+}
+#columnas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+#col1, #col2{
+    width: 45%;
+    text-align: left;
+}
+
+#contRepuestos button{
+    margin-top: 5px;
+    padding: 4px 5px;
+    border-radius: 10px;
+    background-color: rgb(117, 176, 160);
+    border: none;
+    cursor: pointer;
+}
+
+#resultadoRepuesto{
+    margin-top: 10px;
+    color: rgb(39, 80, 151);
+    font-size: 20px;
+}
